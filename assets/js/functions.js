@@ -19,3 +19,23 @@ const toggleLangDropdown = () => {langList.classList.toggle("expanded");}
 
 hamburger.addEventListener("click", toggleMobileMenu);
 currlang.addEventListener("click", toggleLangDropdown);
+
+// Scroll-Up button functionality
+const scrollToTopButton = document.getElementById('scrollToTopButton');
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const scrollPosition =
+    window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollPosition > 50) {
+    scrollToTopButton.classList.add('visible');
+  } else {
+    scrollToTopButton.classList.remove('visible');
+    scrollToTopButton.style.display = 'none';
+  }
+});
