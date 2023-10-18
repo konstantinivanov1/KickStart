@@ -45,6 +45,20 @@ p{
     text-align: center;
 }
 
+.section-title::before,
+.section-title::after{
+    content: "";
+    background-color: var(--c-primary);
+    height: 3px;
+    width: 100%;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+.section-title::after{
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
 
 
 /* Header */
@@ -178,7 +192,10 @@ header{
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    padding-bottom: 24px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 
 .benefits-holder{
