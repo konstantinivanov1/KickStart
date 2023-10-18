@@ -5,6 +5,7 @@
     # Who are we Section
     # Packages Section
     # Contact Form
+    # Scroll to top button
 */
 
 
@@ -304,4 +305,28 @@ header{
     padding: 0;
     border: 0;
     cursor: pointer
+}
+
+/* Scroll to top button*/
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: #ffffff;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+.scroll-to-top.visible{
+  display: flex!important;
+  display: -webkit-flex!important;
+}
+.scroll-to-top i{
+  color: #172e53;
 }
