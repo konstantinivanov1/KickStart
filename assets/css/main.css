@@ -6,6 +6,7 @@
     # Who are we Section
     # Packages Section
     # Contact Form
+    # Footer
     # Scroll to top button
 */
 
@@ -40,7 +41,6 @@ a:hover{
     color: var(--c-primary-b)
 }
 .section{
-    min-height: calc(100vh - 116px);
     padding: 24px;
 }
 p{
@@ -177,6 +177,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    min-height: calc(100vh - 116px);
 }
 .hero-img{
     position: absolute;
@@ -224,7 +225,7 @@ header{
     transition: all .7s;
 }
 .hero .book-a-meeting:hover,
-.hero .contact-form input.submit-btn:hover{
+.contact-form input.submit-btn:hover{
     background-color: var(--c-primary-b);
     color: var(--c-primary)
 }
@@ -409,6 +410,16 @@ header{
     padding: 0;
     border: 0;
     cursor: pointer
+}
+
+/* Footer */
+.footer{
+    background-color: #ebebeb;
+    width: calc(100% - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px
 }
 
 /* Scroll to top button*/
