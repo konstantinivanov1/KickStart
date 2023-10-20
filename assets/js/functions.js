@@ -2,6 +2,9 @@ const header = document.getElementById("header");
 const hamburger = document.getElementById("hamburger");
 const currlang = document.getElementById("curr-lang");
 const langList = document.getElementById("languages-list");
+const currLangFlag = document.getElementById("curr-lang-flag");
+const enLang = document.getElementById("en-lang");
+const beLang = document.getElementById("be-lang");
 
 const toggleMobileMenu = () => {
     header.classList.toggle("nav-open");
@@ -15,7 +18,15 @@ const toggleMobileMenu = () => {
     }
 }
 
-const toggleLangDropdown = () => {langList.classList.toggle("expanded");}
+enLang.addEventListener("click", () => {
+  currLangFlag.src = "images/flags/engl-flag.svg"
+})
+
+beLang.addEventListener("click", () => {
+  currLangFlag.src = "images/flags/belg-flag.svg"
+})
+
+const toggleLangDropdown = () => {currlang.classList.toggle("expanded");}
 
 hamburger.addEventListener("click", toggleMobileMenu);
 currlang.addEventListener("click", toggleLangDropdown);
